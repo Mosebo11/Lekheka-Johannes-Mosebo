@@ -141,6 +141,37 @@
             margin-bottom: 5px;
         }
         
+        /* Achievements & Skills */
+        .achievements-list, .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .achievement-item, .skill-item {
+            margin-bottom: 8px;
+        }
+        
+        /* References */
+        .references-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .reference-item {
+            margin-bottom: 15px;
+        }
+        
+        .reference-name {
+            font-weight: bold;
+        }
+        
+        .reference-position {
+            font-style: italic;
+            margin: 3px 0;
+        }
+        
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             .header h1 {
@@ -169,7 +200,7 @@
                 margin-top: 5px;
             }
             
-            .personal-details {
+            .personal-details, .achievements-list, .skills-list, .references-list {
                 grid-template-columns: 1fr;
             }
         }
@@ -193,12 +224,12 @@
     <div class="resume">
         <header class="header">
             <h1>Lekheka Johannes Mosebo</h1>
-            <p>Communication Officer</p>
+            <p>Communication and Marketing Officer</p>
             <div class="contact-info">
                 <span>Motsekuoa Ha- Bele P.O.Box 300 Motsekuoa 194</span>
                 <span>+266 56035120 / 62694487</span>
                 <span>mosebomosebo658@gmail.com</span>
-                <span>https://lekheka-johannes-mosebo.vercel.app/</span>
+                <span>https://lekheka-johannes-mosebo.vercel.app</span>
             </div>
         </header>
         
@@ -292,7 +323,7 @@
                         <li>Conducting Outreach.</li>
                         <li>Distributing health education.</li>
                         <li>Community mobilization.</li>
-                        <li>Setting and presenting on peers</li>
+                        <li>Setting and presenting on peers.</li>
                     </ul>
                 </div>
                 
@@ -411,6 +442,102 @@
                         <li>Searched online databases, contacted relevant organizations, or collected data through surveys or interviews.</li>
                         <li>Collected data from various sources using different methods.</li>
                     </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-title">Community Leader</span>
+                        <span class="experience-date">-</span>
+                    </div>
+                    <div class="experience-company">Send a Cow: Mamants'o Community Counsel</div>
+                    <ul class="experience-tasks">
+                        <li>Monitor the projects in my community counsel.</li>
+                        <li>Facilitated and lead community meetings and events.</li>
+                        <li>Built relationships and partnerships with community members.</li>
+                        <li>Developed and implemented community projects and initiatives.</li>
+                        <li>Represented the community's interests and advocating for its needs.</li>
+                        <li>Monitoring and evaluating project progress and outcomes.</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-title">Polling Officer</span>
+                        <span class="experience-date">-</span>
+                    </div>
+                    <div class="experience-company">Independent Electoral Commission</div>
+                    <ul class="experience-tasks">
+                        <li>Set up and prepared the polling station before the start of voting.</li>
+                        <li>Ensured that all necessary materials and equipment were in place and in working order.</li>
+                        <li>Assisted with voter registration and checked voter identification to ensure eligibility to vote.</li>
+                        <li>Explained voting procedures and provided guidance to voters, including how to mark the ballot correctly.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="achievements-section">
+                <h2>Achievements & Awards</h2>
+                <ul class="achievements-list">
+                    <li class="achievement-item">Certificate of Completion from Global Evangelism Ministries</li>
+                    <li class="achievement-item">Certificate of Civil Registration and Vital Statistics Systems from World Bank Group</li>
+                    <li class="achievement-item">Certificate of Bible Correspondence Courses</li>
+                    <li class="achievement-item">Certificate of participation in International Youth Fellowship Lesotho</li>
+                    <li class="achievement-item">Certificate of good work in the program of Key Populations</li>
+                </ul>
+            </section>
+            
+            <section class="skills-section">
+                <h2>Professional Skills, Attributes And Competencies</h2>
+                <ul class="skills-list">
+                    <li class="skill-item">Excellent written and verbal communication skills.</li>
+                    <li class="skill-item">Strong attention to detail and accuracy.</li>
+                    <li class="skill-item">Ability to manage multiple projects and deadlines.</li>
+                    <li class="skill-item">Ability to work effectively under pressure.</li>
+                    <li class="skill-item">Excellent interpersonal skills and the ability to build relationships.</li>
+                    <li class="skill-item">Strong knowledge of communication tools and technologies.</li>
+                    <li class="skill-item">Honesty, ethical and trustworthy.</li>
+                    <li class="skill-item">Ability to work efficiently and accurately and meets deadlines.</li>
+                    <li class="skill-item">Computer literacy (Editing software, Word, Excel and PowerPoint).</li>
+                    <li class="skill-item">Strong team player.</li>
+                </ul>
+            </section>
+            
+            <section class="references-section">
+                <h2>References</h2>
+                <div class="references-list">
+                    <div class="reference-item">
+                        <div class="reference-name">Mr. Lehloholo Mohloai</div>
+                        <div class="reference-position">Project Manager, The People's Matrix Association</div>
+                        <div class="reference-contact">luckymohloai7@gmail.com</div>
+                        <div class="reference-contact">+266 69489542</div>
+                    </div>
+                    
+                    <div class="reference-item">
+                        <div class="reference-name">Mrs. Mamotsoko Motlomelo</div>
+                        <div class="reference-position">District Manager, LENASO</div>
+                        <div class="reference-contact">mmamotsoko@yahoo.com</div>
+                        <div class="reference-contact">+266 63990618</div>
+                    </div>
+                    
+                    <div class="reference-item">
+                        <div class="reference-name">Ms. Thato Ts'ukulu</div>
+                        <div class="reference-position">Program Officer, MCDI</div>
+                        <div class="reference-contact">thatot@hotmail.com</div>
+                        <div class="reference-contact">+266 58865606 / 62005606</div>
+                    </div>
+                    
+                    <div class="reference-item">
+                        <div class="reference-name">Ms. Limpho Makakola</div>
+                        <div class="reference-position">Sub-Editor, Lesotho Television</div>
+                        <div class="reference-contact">+266 58477275</div>
+                    </div>
+                    
+                    <div class="reference-item">
+                        <div class="reference-name">Mr. Ts'epang Pheello</div>
+                        <div class="reference-position">Program Manager, Ts'enolo FM</div>
+                        <div class="reference-contact">tshepangpheello30@gmail.com</div>
+                        <div class="reference-contact">+266 68704300 / 57428943</div>
+                    </div>
                 </div>
             </section>
         </div>
